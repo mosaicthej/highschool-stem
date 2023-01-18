@@ -145,7 +145,6 @@ $$
 空集 $\emptyset$ 的基数为 $0$。
 一个集合的幂集的基数是 $2^{|A|}$。
 比如
-
 $$
 \begin{align}
 |P(\{1, 2, 3\})| &= | \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\} | \\
@@ -276,6 +275,7 @@ $$
 ![func](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Injection_keine_Injektion_2a.svg/220px-Injection_keine_Injektion_2a.svg.png)
 
 这个关系的 *Domain* 是 $\{1, 2, 3\}$，*Codomain* 是 $\{A, B, C, D\}$。这段关系的定义规则是：
+
 $$
 \begin{align}\begin{cases}
 1 &\rightarrow D \\
@@ -295,6 +295,7 @@ $$
 ![non-func](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Injection_keine_Injektion_1.svg/220px-Injection_keine_Injektion_1.svg.png)
 
 它的 *Domain* 是 $\{1, 2, 3, 4\}$，*Codomain* 是 $\{A, B, C, D\}$。这段关系的定义规则是：
+
 $$
 \begin{align}
 1 &\rightarrow D \\
@@ -320,6 +321,7 @@ x & x \geq 0 \\
 $$
 
 通常我们用 $|x|$ 来表示绝对值。
+
 $$
 |x| = \begin{cases}
 x & x \geq 0 \\
@@ -328,6 +330,7 @@ x & x \geq 0 \\
 $$
 
 我们也可以使用根号平方的方式来表示绝对值。
+
 $$
 |x| = \sqrt{x^2}
 $$
@@ -400,6 +403,8 @@ x+3 & x \geq -3 \\
 \end{cases}
 $$
 
+
+
 $$
 |2x+5|-3 = \begin{cases}
 2x+2 & x \geq -2.5 \\
@@ -413,9 +418,11 @@ $$
 |2x+5|-3 \\
 \end{align}
 $$
+
 首先寻找使 $2x+5 =0$ 的点，即 $x=-2.5$
 
 那么这个 $x=2.5$ 就是分段函数的分界点，使用分段函数重写这个式子，得到:
+
 $$
 \begin{align}
 |2x+5|-3 = \begin{cases}
@@ -425,6 +432,7 @@ $$
 \end{align}
 $$
 化简，得到
+
 $$
 \begin{align}
 |2x+5|-3 = \begin{cases}
