@@ -12,15 +12,15 @@
 
 ### Set Builder Notation 集合生成法
 
-当一个set中的元素都是由某个公式生成的时候，我们可以用 Set Builder Notation 来表示这个集合。比如说，我们可以用 $\{x \mid x \in \mathbb{N}\}$ 来表示所有自然数的集合。这里的 $\mathbb{N}$ 是自然数的集合，$\mathbb{N} = \{1, 2, 3, ...\}$。我们可以用 $\{x \mid x \in \mathbb{N}, x \leq 100\}$ 来表示所有小于等于100的自然数的集合
+当一个set中的元素都是由某个公式生成的时候，我们可以用 Set Builder Notation 来表示这个集合。比如说，我们可以用 $\{x \mid x \in \mathbb{N}\}$ 来表示所有自然数的集合。这里的 $\mathbb{N}$ 是自然数的集合， $\mathbb{N} = \{1, 2, 3, ...\}$ 。我们可以用 $\{x \mid x \in \mathbb{N}, x \leq 100\}$ 来表示所有小于等于100的自然数的集合
 
-| 的左边是集合的元素，右边是集合的条件。我们可以用 $\{x \mid x \in \mathbb{N}, x \leq 100, x \text{ is even}\}$ 来表示所有小于等于100的自然数中的偶数的集合。$\{x^2 | x \in \mathbb{N}, x \leq 100\}$ 表示所有小于等于100的自然数的平方的集合 = {1, 4, 9, 16, 25, 36, 49, 64, 81, 100}。
+| 的左边是集合的元素，右边是集合的条件。我们可以用 $\{x \mid x \in \mathbb{N}, x \leq 100, x \text{ is even}\}$ 来表示所有小于等于100的自然数中的偶数的集合。 $\{x^2 | x \in \mathbb{N}, x \leq 100\}$  表示所有小于等于100的自然数的平方的集合 = {1, 4, 9, 16, 25, 36, 49, 64, 81, 100}。
 
 ### Membership and Subsets 成员关系和子集
 
-当 x 属于集合 A 的时候，我们用 $x \in A$ 来表示这种关系, `x is a member of A` 或 `x in A`。当 x 不属于集合 A 的时候，我们用 $x \notin A$, `x not in A` 来表示。比如说，$1 \in \{1, 2, 3\}$，$1 \notin \{2, 3, 4\}$，$0.2 \notin \mathbb{Z}$
+当 x 属于集合 A 的时候，我们用 $x \in A$ 来表示这种关系, `x is a member of A` 或 `x in A`。当 x 不属于集合 A 的时候，我们用 $x \notin A$, `x not in A` 来表示。比如说， $1 \in \{1, 2, 3\}$ ， $1 \notin \{2, 3, 4\}$ ， $0.2 \notin \mathbb{Z}$
 
-当集合B中的每一个元素都属于集合A的时候，我们用 $B \subseteq A$, `B is a subset of A` 来表示（B被包含在A中）。比如说，$\{1, 2, 3\} \subseteq \{1, 2, 3, 4\}$，$\{1, 2, 3\} \subseteq \{1, 2, 3\}$，空集合 $\emptyset$ 是所有集合的子集（每一个 set 都至少会包含 "空"）。如果集合中有一个元素不属于另一个集合，那么我们就说这个集合不是另一个集合的子集。比如说，$\{1, 2, 3\} \not\subseteq \{1, 2\}$，$\{1, 2, 3\} \not\subseteq \{1, 2, 4\}$。
+当集合B中的每一个元素都属于集合A的时候，我们用 $B \subseteq A$, `B is a subset of A` 来表示（B被包含在A中）。比如说， $\{1, 2, 3\} \subseteq \{1, 2, 3, 4\}$ ， $\{1, 2, 3\} \subseteq \{1, 2, 3\}$ ，空集合 $\emptyset$ 是所有集合的子集（每一个 set 都至少会包含 "空"）。如果集合中有一个元素不属于另一个集合，那么我们就说这个集合不是另一个集合的子集。比如说， $\{1, 2, 3\} \not\subseteq \{1, 2\}$ ， $\{1, 2, 3\} \not\subseteq \{1, 2, 4\}$ 。
 
 因为一个集合的元素可以是任何东西，所以集合里面的元素也可以是一个数字、桌子、苹果、或者*另一个集合*。比如 $\{1, 2, 3, \{4, 5, 6\}\}$ 就是一个集合，它包含了 <u>**4**</u> 个元素：1, 2, 3, 和 $\{4, 5, 6\}$。
 
@@ -31,6 +31,7 @@
 已知集合 $A$ 和集合 $B$，并集 $A \cup B$ 是一个集合 `A union B`，它包含了所有属于 $A$ **或** $B$ 的元素。
 
 比如
+
 $$
 \begin{align}
 \{1, 2, 3\} \cup \{2, 3, 4\} &= \{1, 2, 3, 4\} \\
@@ -42,6 +43,7 @@ $$
 $$
 
 我们用 $\bigcup_{i=0}^n A_i = A_0 \cup A_1 \cup \cdots \cup A_n$ 来表示多个集合的并集。比如说，
+
 $$
 \begin{align}
 \bigcup_{i=0}^3 \{i\} &= \{0\} \cup \{1\} \cup \{2\} \cup \{3\} = \{0, 1, 2, 3\} \\
@@ -50,9 +52,10 @@ $$
 
 ### Intersection 交集
 
-已知集合 $A$ 和集合 $B$，交集 $A \cap B$ 是一个集合 `A intersection B`，它包含了所有属于 $A$ **且** $B$ 的元素。(*这个元素必须同时属于 $A$ **和** $B$*)
+已知集合 $A$ 和集合 $B$，交集 $A \cap B$ 是一个集合 `A intersection B`，它包含了所有属于 $A$ **且** $B$ 的元素。(*这个元素必须同时属于 $A$  **和**  $B$ * )
 
 比如
+
 $$
 \begin{align}
 \{1, 2, 3\} \cap \{2, 3, 4\} &= \{2, 3\} \\
@@ -63,7 +66,8 @@ $$
 \end{align}
 $$
 
-当然，我们也可以用 $\bigcap_{i=0}^n A_i = A_0 \cap A_1 \cap \cdots \cap A_n$ 来表示多个集合的交集。比如说，
+当然，我们也可以用 $\bigcap_{i=0}^n A_i = A_0 \cap A_1 \cap \cdots \cap A_n$ 来表示多个集合的交集。比如说， 
+
 $$
 \begin{aligned}
 \bigcap {\{1,2,3,4\}, {\{1, 4, 9, 16\}, {\{1, 8, 27, 64\}}} }\\
@@ -78,6 +82,7 @@ $$
 已知集合 $A$ 和集合 $B$，差集 $A \setminus B$ 是一个集合 `A difference B`，它包含了所有属于 $A$ **但不属于** $B$ 的元素。
 
 比如
+
 $$
 \begin{align}
 \{1, 2, 3\} \setminus \{2, 3, 4\} &= \{1\} \\
@@ -97,6 +102,7 @@ $$
 已知集合 $A$，幂集 $P(A)$ 是一个集合 `power set of A`，它包含了所有 $A$ 的子集。
 
 比如
+
 $$
 \begin{align}
 P(\{1, 2, 3\}) &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\} \\
@@ -109,6 +115,7 @@ $$
 已知集合 $A$ 和集合 $B$，笛卡尔积 $A \times B$ 是一个集合 `A cartesian product B`，它包含了所有 $A$ 中的元素和 $B$ 中的元素的组合。
 
 比如
+
 $$
 \begin{align}
 \{1, 2\} \times \{3, 4\} &= \{(1, 3), (1, 4), (2, 3), (2, 4)\} \\
@@ -126,6 +133,7 @@ $$
 已知集合 $A$，基数 $|A|$ 是一个自然数 `cardinality of A`，它表示集合 $A$ 中元素的个数。
 
 比如
+
 $$
 \begin{align}
 | \{1, 2, 3\} | &= 3 \\
@@ -136,7 +144,8 @@ $$
 
 空集 $\emptyset$ 的基数为 $0$。
 一个集合的幂集的基数是 $2^{|A|}$。
-比如：
+比如
+
 $$
 \begin{align}
 |P(\{1, 2, 3\})| &= | \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\} | \\
@@ -295,3 +304,132 @@ $$
 $$
 
 这个关系不是一个函数，因为它的输出 $2$ 对应了两个输入 $B$ 和 $C$。
+
+# Absolute Value 绝对值
+
+## Absolute Value Definition 绝对值定义
+
+绝对值是一个把实数映射到非负实数的函数。
+
+$$
+abs: \mathbb{R} \rightarrow \mathbb{R_{\geq0}}\\
+abs(x) = \begin{cases}
+x & x \geq 0 \\
+-x & x < 0
+\end{cases}
+$$
+
+通常我们用 $|x|$ 来表示绝对值。
+$$
+|x| = \begin{cases}
+x & x \geq 0 \\
+-x & x < 0
+\end{cases}
+$$
+
+我们也可以使用根号平方的方式来表示绝对值。
+$$
+|x| = \sqrt{x^2}
+$$
+
+绝对值永远是非负的。
+
+$$
+|x| \geq 0
+$$
+
+## Absoulte Value, Number Line and Distance 绝对值，数轴和距离
+
+如果把一个实数 $x$ 画在数轴上，那么它的绝对值 $|x|$ 就是 $x$ 到原点($0$)的距离。
+
+![abs](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/AbsoluteValueDiagram.svg/220px-AbsoluteValueDiagram.svg.png)
+
+对于任意两个实数 $x$ 和 $y$，它们的绝对值之差 $|x - y|$ 就是 $x$ 和 $y$ 之间的距离。比如
+
+$$
+|-3 - 5| = |-8| = 8
+$$
+
+## Calculation and Order 计算和排序
+
+计算一个带绝对值的式子的时候，比如 $|-3 + 2| + 5$，我们可以先计算绝对值里面的部分，然后再计算绝对值外面的部分。
+
+$$
+\begin{align}
+|-3 + 2| + 5&= |-1| + 5\\
+&= 1 + 5\\
+&= 6
+\end{align}
+$$
+
+当比较两个带绝对值的式子的大小的时候，先计算出这个式子的值，然后再比较这个值的大小。
+
+例如下列式子
+|绝对值式子|值|
+|:-:|:-:|
+|$\|-3 + 2\| + 5$|$6$|
+|$\|-2 + 1\| + -3$|$-2$|
+
+### Product Quotient Rule 乘除法规则
+
+$$
+\begin{align}
+|a| \cdot |b| &= |ab|\\
+|a| \div |b| &= |\frac{a}{b}|
+\end{align}
+$$
+
+
+## Piecewise Function 分段函数
+
+分段函数是把一个函数分成几个区间，然后在每个区间里面定义一个函数。例如
+
+$$
+f(x) = \begin{cases}
+x & x \geq 0 \\
+-x & x < 0
+\end{cases}
+$$
+
+给一个绝对值，要求用 piecewise function (分段函数) 来表示它。例如
+
+$$
+|x+3| = \begin{cases}
+x+3 & x \geq -3 \\
+-(x+3) & x \lt -3
+\end{cases}
+$$
+
+$$
+|2x+5|-3 = \begin{cases}
+2x+2 & x \geq -2.5 \\
+-2x-8 & x \lt -2.5
+\end{cases}
+$$
+计算时，先计算绝对值里面的部分，找到使绝对值内值为 0 的点，然后再计算绝对值外面的部分。
+
+$$
+\begin{align}
+|2x+5|-3 \\
+\end{align}
+$$
+首先寻找使 $2x+5 =0$ 的点，即 $x=-2.5$
+
+那么这个 $x=2.5$ 就是分段函数的分界点，使用分段函数重写这个式子，得到:
+$$
+\begin{align}
+|2x+5|-3 = \begin{cases}
+(2x+5)-3 & x \geq -2.5 \\
+-(2x+5)+3 & x \lt -2.5
+\end{cases} \\
+\end{align}
+$$
+化简，得到
+$$
+\begin{align}
+|2x+5|-3 = \begin{cases}
+2x+2 & x \geq -2.5 \\
+-2x-8 & x \lt -2.5
+\end{cases}
+\end{align}
+$$
