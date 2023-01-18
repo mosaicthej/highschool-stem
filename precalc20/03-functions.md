@@ -37,12 +37,13 @@ $$
 ![func](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Injection_keine_Injektion_2a.svg/220px-Injection_keine_Injektion_2a.svg.png)
 
 这个关系的 *Domain* 是 $\{1, 2, 3\}$，*Codomain* 是 $\{A, B, C, D\}$。这段关系的定义规则是：
+
 $$
-\begin{align}
+\begin{align}\begin{cases}
 1 &\rightarrow D \\
 2 &\rightarrow C \\
 3 &\rightarrow C \\
-\end{align}
+\end{cases}\end{align}
 $$
 
 那么这个关系的 *Range* 是 $\{C, D\}$。
@@ -56,6 +57,7 @@ $$
 ![non-func](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Injection_keine_Injektion_1.svg/220px-Injection_keine_Injektion_1.svg.png)
 
 它的 *Domain* 是 $\{1, 2, 3, 4\}$，*Codomain* 是 $\{A, B, C, D\}$。这段关系的定义规则是：
+
 $$
 \begin{align}
 1 &\rightarrow D \\
